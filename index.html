@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container main-div">
+        <h1 class="heading">Generate a <span>Random Password</span></h1>
+        <div class="pass-generation flex">
+            <div class="input-div flex">
+                <input type="text" class="display-pass" id="display-pass" readonly>
+                <img class="copy-img" src="./assets/copy.png" alt="copy-icon" onclick="copyPassword()">
+            </div>
+            <div class="button-container flex">
+                <button class="generate-password flex"><img class="generate-img" src="./assets/generate.png"
+                        alt="Generate passsword pic">Generate
+                    Password</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>

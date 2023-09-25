@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-text-color: #183b56;
+    --secondary-text-color: #577592;
+    --accent-color: #21a44c;
+    --accent-color-dark: #1c8d41;
+    --background-color: #002339;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: var(--primary-text-color);
+    background-color: var(--background-color);
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    color: var(--secondary-text-color);
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Utility Classes */
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+.container {
+    max-width: 1180px;
+    margin-inline: auto;
+}
+
+/* Styling */
+
+.main-div {
+    margin-top: 80px;
+}
+
+.heading {
+    color: white;
+    font-weight: 500;
+}
+
+span {
+    display: block;
+    color: #25b856;
+    font-weight: 500;
+    text-decoration: underline;
+    text-underline-offset: 20%;
+}
+
+
+.pass-generation {
+    flex-direction: column;
+    align-items: start;
+    margin-top: 30px;
+}
+
+.input-div {
+    background-color: #fff;
+    width: 450px;
+    border-radius: 4px;
+}
+
+#display-pass {
+    padding-block: 14px ;
+    padding-inline-start: 8px ;
+    width: 410px;
+    border: 0;
+    outline: 0;
+    border-radius: 4px;
+    font-size: large;
+    font-family: "Poppins",sans-serif;
+}
+
+.copy-img {
+    height: 28px;
+}
+
+.copy-img:active {
+    transform: scale(1.000001);
+}
+
+.generate-img {
+    height: 24px;
+}
+
+.generate-password {
+    gap: 10px;
+    padding-inline: 12px;
+    padding-block: 12px;
+    font-family: "Poppins",sans-serif;
+    border-radius: 4px;
+    background-color: var(--accent-color);
+    color: white;
+    font-size: 14px;
+    font-weight: 200;
+    cursor: pointer;
+    border: 0;
+    outline: 0;
+    margin-block: 20px;
+    letter-spacing: 0.5px;
+    transition: transform 0.1;
+}
+
+.generate-password:hover {
+    background-color: var(--accent-color-dark);
+}
+
+.generate-password:active {
+    transform: scale(1.05);
+}
+
+@media screen and (max-width: 320px) {
+    #display-pass {
+        padding-block: 14px ;
+        padding-inline-start: 8px;
+        width: 90%;
+        border: 0;
+        outline: 0;
+        border-radius: 4px;
+        font-size: large;
+        font-family: "Poppins",sans-serif;
+    }
+
+    /* .generate-password */
+    .button-container {
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 310px) {
+    .heading {
+        font-size: X-large;
+    }
+}
+
+@media screen and (min-width:450px) and (max-width: 1000px) {
+    .container  {
+        max-width: 80%;
+    }
+}
