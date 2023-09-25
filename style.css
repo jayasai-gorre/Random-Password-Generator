@@ -17,7 +17,8 @@ body {
     font-family: 'Poppins', sans-serif;
     color: var(--primary-text-color);
     background-color: var(--background-color);
-    /* touch-action: manipulation;     */
+    touch-action: manipulation;    
+    overflow: hidden;
 }
 
 p {
